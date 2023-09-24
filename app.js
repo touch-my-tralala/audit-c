@@ -68,7 +68,7 @@ function result() {
         "Bądź ostrożna. Wynik testu wskazuje na to, że możesz mieć początki problemu z alkoholem.";
     } else {
       POPUP_TEXT.innerText =
-        "Powinnaś ograniczyć spożywanie alkoholu i poszukać pomocy. Masz problem z alkoholem.";
+        "Powinnaś ograniczyć spożywanie alkoholu i poszukać fachowej pomocy. Masz problem z alkoholem.";
     }
   }
 
@@ -80,7 +80,7 @@ function result() {
         "Bądź ostrożny. Wynik testu wskazuje na to, że możesz mieć początki problemu z alkoholem.";
     } else {
       POPUP_TEXT.innerText =
-        "Powinieneś ograniczyć spożywanie alkoholu i poszukać pomocy. Masz problem z alkoholem.";
+        "Powinieneś ograniczyć spożywanie alkoholu i poszukać fachowej pomocy. Masz problem z alkoholem.";
     }
   }
 
