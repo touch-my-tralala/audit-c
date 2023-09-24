@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test AUDIT-C</title>
+    <!-- FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Pathway+Extreme:opsz,wght@8..144,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS  -->
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Test AUDIT-C</h1>
+      <h2>Sprawdź, czy masz problem z alkoholem.</h2>
+      <form class="test">
+        <fieldset>
+          <select name="sex" id="sex">
+            <option value="not_selected" disabled selected>
+              podaj swoją płeć
+            </option>
+            <option value="w" id="woman">kobieta</option>
+            <option value="m" id="man">mężczyna</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>1. Jak często pijesz napoje zawierające alkohol?</legend>
+          <label
+            >Nigdy<input
+              type="radio"
+              class="frequency"
+              name="frequency"
+              value="0"
+              required
+          /></label>
+          <label
+            >Raz w miesiącu lub rzadziej<input
+              type="radio"
+              class="frequency"
+              name="frequency"
+              value="1"
+          /></label>
+          <label
+            >2-4 razy w miesiącu<input
+              type="radio"
+              class="frequency"
+              name="frequency"
+              value="2"
+          /></label>
+          <label
+            >2-3 razy w tygodniu<input
+              type="radio"
+              class="frequency"
+              name="frequency"
+              value="3"
+          /></label>
+          <label
+            >4 lub więcej razy w tygodniu<input
+              type="radio"
+              class="frequency"
+              name="frequency"
+              value="4"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            2. Ile porcji* alkoholu wypijasz przeciętnie w okresie, kiedy
+            spożywasz alkohol?
+          </legend>
+          <label
+            >1-2<input
+              type="radio"
+              class="amount"
+              name="amount"
+              value="0"
+              required
+          /></label>
+          <label
+            >3-4<input type="radio" class="amount" name="amount" value="1"
+          /></label>
+          <label
+            >5-6<input type="radio" class="amount" name="amount" value="2"
+          /></label>
+          <label
+            >7-9<input type="radio" class="amount" name="amount" value="3"
+          /></label>
+          <label
+            >10 lub więcej<input
+              type="radio"
+              class="amount"
+              name="amount"
+              value="4"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            3. Jak często wypijasz sześć albo więcej porcji przy jednej okazji?
+          </legend>
+          <label
+            >Nigdy
+            <input
+              type="radio"
+              class="portions"
+              name="portions"
+              value="0"
+              required
+          /></label>
+          <label
+            >Rzadziej niż raz w miesiącu<input
+              type="radio"
+              class="portions"
+              name="portions"
+              value="1"
+          /></label>
+          <label
+            >Raz w miesiącu<input
+              type="radio"
+              class="portions"
+              name="portions"
+              value="2"
+          /></label>
+          <label
+            >Raz w tygodniu<input
+              type="radio"
+              class="portions"
+              name="portions"
+              value="3"
+          /></label>
+          <label
+            >Codziennie lub prawie codziennie<input
+              type="radio"
+              class="portions"
+              name="portions"
+              value="4"
+          /></label>
+        </fieldset>
+        <div class="btn-wrapper">
+          <button type="submit" class="submit">Sprawdź</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+      <div class="popup">
+        <p class="popup-text"></p>
+        <p class="score">Twój wynik to: <span class="score-no"></span>pkt.</p>
+        <p class="norm">
+          Norma dla kobiet wynosi do 2-3 pkt, a dla mężczyzn 4 pkt. lub poniżej.
+          Przekroczenie tych wartości może świadczyć o istnieniu problemu
+          alkoholowego (picie szkodliwe lub uzależnienie).
+        </p>
+        <button class="close-btn">zamknij</button>
+      </div>
+      <small>
+        * 1 porcja alkoholu to 10g. czystego alkoholu. <br />
+        <hr />
+        10g czystego (100%) alkoholu zawarta jest w ok. 250ml piwa o mocy 5%, w
+        ok. 100ml wina o mocy 12% oraz w ok. 30ml wódki o mocy 40%.
+      </small>
+    </div>
+  </body>
+</html>
