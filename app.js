@@ -61,9 +61,9 @@ function result() {
   });
 
   if (SELECT.value === "w") {
-    if (points < 2) {
+    if (points < 4) {
       POPUP_TEXT.innerText = "Nie masz problemu z alkoholem.";
-    } else if (points <= 3) {
+    } else if (points === 4) {
       POPUP_TEXT.innerText =
         "Bądź ostrożna. Wynik testu wskazuje na to, że możesz mieć początki problemu z alkoholem.";
     } else {
@@ -73,9 +73,9 @@ function result() {
   }
 
   if (SELECT.value === "m") {
-    if (points < 4) {
+    if (points < 5) {
       POPUP_TEXT.innerText = "Nie masz problemu z alkoholem.";
-    } else if (points === 4) {
+    } else if (points === 5) {
       POPUP_TEXT.innerText =
         "Bądź ostrożny. Wynik testu wskazuje na to, że możesz mieć początki problemu z alkoholem.";
     } else {
