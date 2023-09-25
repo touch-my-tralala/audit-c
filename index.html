@@ -26,14 +26,17 @@
       </header>
       <main>
         <form class="test">
-          <fieldset>
-            <select name="sex" id="sex" aria-label="sex">
-              <option value="not_selected" disabled selected>
-                podaj swoją płeć
-              </option>
-              <option value="w" id="woman">kobieta</option>
-              <option value="m" id="man">mężczyna</option>
-            </select>
+          <fieldset class="fieldset-sex">
+            <legend class="legend-sex">Płeć</legend>
+            <div class="select-wrapper">
+              <select name="sex" id="sex" aria-label="sex">
+                <option value="not_selected" disabled selected>
+                  podaj swoją płeć
+                </option>
+                <option value="w" id="woman">kobieta</option>
+                <option value="m" id="man">mężczyna</option>
+              </select>
+            </div>
           </fieldset>
           <fieldset>
             <legend>1. Jak często pijesz napoje zawierające alkohol?</legend>
